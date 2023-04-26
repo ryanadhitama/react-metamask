@@ -66,7 +66,7 @@ const Metamask = () => {
   });
 
   if (isMobile()) {
-    const dappUrl = "react-metamask-auth.netlify.app";
+    const dappUrl = "react-metamask-auth.vercel.app";
     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
     return (
       <a href={metamaskAppDeepLink}>
@@ -93,7 +93,7 @@ const Metamask = () => {
             </button>
           )}
         </div>
-        
+
         {userAccount ? (
           <div className="content">Congratulation! Success Login</div>
         ) : (
